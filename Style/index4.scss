@@ -1,0 +1,51 @@
+@import "./reset";
+@import "./mixins";
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-image: url(..//Assets/Images/logo1.png);
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-size: 38%;
+  background-color: #2a7cc7;
+
+  @include mobile {
+    background-image: none;
+  }
+}
+
+.main {
+  padding: 50px;
+
+  .hcontainer {
+    display: grid;
+    row-gap: 3rem;
+    margin-top: 10rem;
+    color: #fff;
+
+    @include mobile {
+      text-align: center;
+    }
+  }
+
+  .fcontainer {
+    display: flex;
+    text-align: initial;
+    column-gap: 1rem;
+    color: #fff;
+
+    &__logo {
+      width: 50px;
+      height: 50px;
+      display: flex;
+    }
+
+    &__list {
+      display: flex;
+    }
+  }
+
+  .text {
+    font-size: 11px;
+  }
+}

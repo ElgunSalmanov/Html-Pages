@@ -1,0 +1,28 @@
+@import "./reset";
+@import "./mixins";
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  display: grid;
+  justify-items: center;
+  text-align: center;
+  row-gap: 1rem;
+  margin-top: 10rem;
+
+  @include mobile {
+    font-size: 10px;
+  }
+
+  &__logo {
+    width: 50px;
+    height: 50px;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+  }
+}

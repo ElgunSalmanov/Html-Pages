@@ -1,0 +1,47 @@
+@import "./reset";
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: auto auto;
+
+  .fcontainer {
+    display: grid;
+    justify-items: center;
+    text-align: center;
+    row-gap: 1rem;
+    margin-top: 10rem;
+
+    &__logo {
+      width: 50px;
+      height: 50px;
+    }
+
+    &__list {
+      display: flex;
+      justify-content: center;
+    }
+
+    .about {
+      opacity: 0.7;
+    }
+
+    .text {
+      font-size: 11px;
+    }
+
+    .color {
+      color: #23a6f0;
+    }
+  }
+
+  .rcontainer {
+    display: grid;
+    grid-template-columns: 25% 25% 0%;
+    grid-template-rows: 60% 20% 50%;
+    align-items: center;
+  }
+}
